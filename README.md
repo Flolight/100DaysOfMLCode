@@ -16,5 +16,7 @@ Learned the different types of machine learning algorithms (supervised or not).
 ## Day 2
 
 * Experimenting about categorical data with sklearn.preprocessing
+* Why and how Split between test and training set
+* Feature scaling
 
 First code file can be found [here](./courses/MachineLearningAZ_Python_HandsOn/data_preprocessing.py)
