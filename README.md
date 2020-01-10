@@ -19,4 +19,4 @@ Learned the different types of machine learning algorithms (supervised or not).
 * Why and how Split between test and training set
 * Feature scaling
 
-First code file can be found [here](./courses/MachineLearningAZ_Python_HandsOn/data_preprocessing.py)
+First code file can be found [here](./courses/MachineLearningAZ_Python_HandsOn/preprocessing/data_preprocessing.py) and a preprocessing template [here](./courses/MachineLearningAZ_Python_HandsOn/preprocessing/data_preprocessing_template.py).
