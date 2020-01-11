@@ -20,3 +20,10 @@ Learned the different types of machine learning algorithms (supervised or not).
 * Feature scaling
 
 First code file can be found [here](./courses/MachineLearningAZ_Python_HandsOn/preprocessing/data_preprocessing.py) and a preprocessing template [here](./courses/MachineLearningAZ_Python_HandsOn/preprocessing/data_preprocessing_template.py).
+
+## Day 3
+
+* Simple Linear Regression algorithm overview
+* Method of ordinary least squares
+
+An example on how to use the simple linear regression to predict salaries depending on the number of years of experience [here](./courses/MachineLearningAZ_Python_HandsOn/regression/simple_linear_regression.py)
