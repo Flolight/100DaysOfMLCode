@@ -57,3 +57,9 @@ Check this out [here](https://youtu.be/_PwhiWxHK8o)
 * SVR implementation
 
 The code for the SVR example can be found [here](./courses/MachineLearningAZ_Python_HandsOn/regressions/SVR/svr.py)
+
+## Day 7
+
+* Decision Tree Regression
+
+The code for the Decision tree regression example can be found [here](./courses/MachineLearningAZ_Python_HandsOn/regressions/decision_tree/decision_tree_regression.py)
