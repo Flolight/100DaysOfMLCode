@@ -42,4 +42,18 @@ A code example for Polynomial regression can be found [here](./courses/MachineLe
 
 The template is [here](./courses/MachineLearningAZ_Python_HandsOn/regressions/regression_template.py)
 
-* Registered to the [AWS Innovate online conference (AI/ML Edition) ](https://aws.amazon.com/fr/events/aws-innovate/machine-learning/) in February
+* Registered to the [AWS Innovate online conference (AI/ML Edition)](https://aws.amazon.com/fr/events/aws-innovate/machine-learning/) in February
+
+## Day 5
+
+* Support Vector Regression (SVR).
+
+Started by understanding the support vector machines (SVM) thanks to the @MITOCW course from Patrick Winston.
+
+Check this out [here](https://youtu.be/_PwhiWxHK8o)
+
+## Day 6
+
+* SVR implementation
+
+The code for the SVR example can be found [here](./courses/MachineLearningAZ_Python_HandsOn/regressions/SVR/svr.py)

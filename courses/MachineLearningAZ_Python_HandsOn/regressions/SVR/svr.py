@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jan 13 22:53:11 2020
+Created on Thu Jan 16 10:12:48 2020
 
 @author: flo
 """
 
-# Regression Template
+# SVR
 
 
 # Importing the libraries
@@ -25,32 +25,34 @@ y = dataset.iloc[:, 2].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.2, random_state = 0)
 """
 # Feature Scaling
-"""from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
-X_train = sc_X.fit_transform(X_train)
-X_test = sc_X.transform(X_test)
 sc_y = StandardScaler()
-y_train = sc_y.fit_transform(y_train)
-y_test = sc_y.transform(np.reshape(y_test, (-1, 1)))"""
-# Fitting the regression model to the dataset
-# <Create the regressor here>
+X = sc_X.fit_transform(X)
+y = sc_y.fit_transform(np.reshape(y, (-1, 1)))
+
+# Fitting the SVR model to the dataset
+from sklearn.svm import SVR
+regressor = SVR(kernel='rbf')
+regressor.fit(X, y)
 
 # Predicting a result with the regression model
-y_pred = regressor.predict(np.array([[6.5]]))
+y_pred = sc_y.inverse_transform(regressor.predict(sc_X.transform(np.array([[6.5]]))))
 
-# Visualising the regression results
+
+# Visualising the SVR results
 plt.scatter(X, y, color = 'red')
 plt.plot(X, regressor.predict(X), color = 'blue')
-plt.title('Salary depending on position (Polynomial Regression)')
+plt.title('Salary depending on position (SVR)')
 plt.xlabel('Position level')
 plt.ylabel('Salary')
 
-# Visualising the regression results (for higher resolution and smoother curve)
+# Visualising the SVR results (for higher resolution and smoother curve)
 X_grid = np.arange(min(X), max(X), 0.1)
 X_grid = X_grid.reshape((len(X_grid), 1))
 plt.scatter(X, y, color = 'red')
 plt.plot(X_grid, regressor.predict(X_grid), color = 'blue')
-plt.title('Salary depending on position (Polynomial Regression)')
+plt.title('Salary depending on position (SVR)')
 plt.xlabel('Position level')
 plt.ylabel('Salary')
 
