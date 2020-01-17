@@ -63,3 +63,9 @@ The code for the SVR example can be found [here](./courses/MachineLearningAZ_Pyt
 * Decision Tree Regression
 
 The code for the Decision tree regression example can be found [here](./courses/MachineLearningAZ_Python_HandsOn/regressions/decision_tree/decision_tree_regression.py)
+
+## Day 8
+
+* Random Forest
+
+Find the code for the random forest regression example [here](./courses/MachineLearningAZ_Python_HandsOn/regressions/random_forest/random_forest.py)
